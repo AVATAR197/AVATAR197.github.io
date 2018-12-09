@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="stylesheet" href="styl.css">
+       <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Daniel Dopiriak</title>
+    </head>
+    <body>
+        <div class="gridmain">
+            <div class="main_omne">
+                <h1>Daniel Dopi riak</h1>
+                <p>Ahojte toto je moja profesijná školská stránka. Mám 16 rokov. Bývam v Prešove. Voľný čas trávim zväčša špotrováním, hraním hier na počítači a počúvaním hudby. Moje obľúbené predmety sú fyzika, matematika a informatika.</p>
+                <div class="profile_image"></div>
+                <div class="button_main">Záľuby</div>
+            </div>
+            <div class="main_image"></div>
+        </div>
+        <div class="gridsecond">
+            <div class="second_image">
+                <video autoplay muted loop class="bg_vid" id="video">
+                    <source src="bg_vid.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="second_zaluby">
+            <h1>CSStutorials</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi natus quas vero eos amet, ex mollitia expedita quaerat laboriosam eum in tempora officiis animi, distinctio optio quis obcaecati nemo. Aspernatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos reprehenderit commodi, doloremque enim tenetur exercitationem, eos illum id, debitis excepturi recusandae voluptatum soluta rerum. Iusto impedit explicabo illum. Iure, cumque.</p>
+            <div class="button_zaluby">School</div>
+            </div>
+        </div>
+    </body>
+    <script>
+        document.getElementById('video').addEventListener('click', function() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        })
+    </script>
+</html>

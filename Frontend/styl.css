@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    /*box-sizing: border-box;*/
+}
+body, html {
+    height: 100%;
+}
+.gridmain {
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+}
+.main_omne {
+    position: relative;
+}
+.main_omne h1, .second_zaluby h1 {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 45px;
+}
+.main_omne p, .second_zaluby p {
+    position: relative;
+    text-align: center;
+    padding: 0 100px;
+    font-size: 18px;
+}
+.main_omne p::before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: solid 3px black;
+}
+.profile_image {
+    background-image: url(daniel.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    margin: 12.5% 50%;
+    transform: translateX(-50%);
+}
+.button_main {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    border-radius: 45px;
+    background-color: #595959;
+    color: #fff;
+}
+.button:hover {
+    cursor: pointer;
+}
+.main_image {
+    background-image: url(img1.jpg);
+    background-position: right;
+    
+}
+
+/*--------------------------------second page------------------------------------*/
+.gridsecond {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+.second_image {
+    position: relative;
+    background-image: url(z2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.second_image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, .6);
+    z-index: 1;
+    min-width: 100%; 
+    min-height: 100%;
+}
+.bg_vid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 80%; 
+    height: 90%;
+    background-position: center;
+    margin-right: 10%;
+    z-index: 2;
+}
+.second_zaluby {
+    position: relative;
+}
+.button_zaluby {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 100px;
+    width: 150px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    border-radius: 45px;
+    background-color: #595959;
+    color: #fff;
+}
+
+
+/*--------------------------------------third page------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
