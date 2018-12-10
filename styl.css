@@ -5,16 +5,15 @@
     /*box-sizing: border-box;*/
 }
 body, html {
-    height: 100%;
+    height: auto;
 }
 .gridmain {
-    min-height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    overflow: hidden;
 }
 .main_omne {
     position: relative;
+    height: auto;
 }
 .main_omne h1, .second_zaluby h1, .third_school h1{
     text-align: center;
@@ -30,7 +29,7 @@ body, html {
 .main_omne p::before, .third_school p::before, .second_zaluby p::before {
     content: "";
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     width: 50%;
     left: 50%;
     transform: translateX(-50%);
@@ -42,7 +41,7 @@ body, html {
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    margin: 12.5% 50%;
+    margin: 10% 50%;
     transform: translateX(-50%);
 }
 .main_image {
@@ -52,7 +51,6 @@ body, html {
 
 /*--------------------------------second page------------------------------------*/
 .gridsecond {
-    min-height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
 }
@@ -61,6 +59,7 @@ body, html {
     background-image: url(z2.jpg);
     background-size: cover;
     background-position: center;
+    height: 600px;
 }
 .second_image::before {
     content: '';
@@ -79,11 +78,12 @@ body, html {
     width: 90%; 
     height: 90%;
     background-position: center;
-    margin: 10% 5% 0;
+    margin: 5% 5% 0;
     z-index: 2;
 }
 .second_zaluby {
     position: relative;
+    padding-bottom: 100px;
 }
 
 /*--------------------------------------third page------------------------------------*/
@@ -91,7 +91,6 @@ body, html {
 .gridthird {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 100%;
 }
 .third_school {
     position: relative;
@@ -117,11 +116,20 @@ table{
 @media (max-width: 1000px) {
     .gridmain, .gridsecond, .gridthird {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        width: 100%;
+        grid-template-rows: auto auto;
     }
+    
     .main_image, .third_image {
         grid-row: 1/2;
-        height: 100%;
+        height: 250px;
+    }
+    .second_image {
+        height: 300px;
+    }
+    .main_omne p, .second_zaluby p, .third_school p {
+        padding: 0 25px 20px;
+    }
+    td{
+        padding: 5px; 
     }
 }
