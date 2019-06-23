@@ -1,0 +1,362 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: 	#282828;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+}
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+button, button::before {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+nav {
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+nav h1 {
+    font-size: 1.5em;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+.hamburger-button {
+    position: absolute;
+    cursor: pointer;
+    margin-left: 20px;
+    z-index: 10;
+}
+.posFixed {
+    position: fixed;
+}
+.hamburger-button .hm-div {
+    background-color: #282828;
+    height: 2px;
+    width: 30px;
+    margin-bottom: 7px;
+    transition: .2s;
+}
+.hamburger-button .hm-div:last-child {
+    margin: 0;
+}
+.hm-div.active {
+    background-color: white;
+}
+.navbar-content {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #282828;
+    color: white;
+    width: 350px;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: .3s;
+    z-index: 9;
+    max-width: 80%;
+    overflow-y: auto;
+}
+.navbar-content .links {
+    width: 100%;
+    position: relative;
+    top: 120px;
+    display: grid;
+}
+.navbar-content .links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4em;
+    margin: 15px auto 15px 45px;
+    cursor: pointer;
+}
+.navbar-content .links a:hover {
+    text-decoration: underline;
+}
+.show {
+    transform: translateX(0);
+}
+.main {
+    margin: 0;
+    padding: 0;
+}
+.landing-page-items {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.landing-page-title {
+    text-align: center;
+    font-size: 3.7em;
+    padding: 0 10px 0 10px;
+    margin: 0;
+}
+.landing-page-subtitle {
+    text-align: center;
+    position: relative;
+    font-size: 1.1em;
+}
+.landing-page-subtitle::before, .work-page p::before, .about_me_title p::before, .contact_me_title p::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -2px;
+    border-bottom: 2px solid #282828;
+}
+.landing-page-button {
+    position: relative;
+    display: block;
+    margin: 30px auto 0px auto;
+    padding: 15px 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: #282828 solid 1px;
+    transition: 0.3s;
+    z-index: 2;
+}
+.landing-page-button::before, .about_me_button_div button::before, .form_submit_button::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+    background-color: #282828;
+    z-index: -1;
+}
+.landing-page-button:hover, .about_me_button_div button:hover, .form_submit_button:hover {
+    color: white;
+}
+.landing-page-button:hover::before, .about_me_button_div button:hover::before, .form_submit_button:hover::before {
+    width: 100%;
+}
+.landing-page-image {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: .6;
+}
+.work-page p, .about_me_title p, .contact_me_title p {
+    position: relative;
+    text-align: center;
+    margin: 0;
+}
+
+.work-page-grid {
+    width: 90%;
+    margin: 75px 0 75px 5%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.work-page-grid div {
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+.work-page-grid div .bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    transition: .4s;
+}
+.work-page-grid div .overlay {
+    position: absolute;
+    background-color: #28282821;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4em;
+    
+}
+.work-page-grid div .overlay a img {
+    transition: .3s;
+}
+.work-page-grid div .overlay div {
+    height: auto;
+}
+.work-page-grid div:hover .bg-image {
+    transform: scale(1.3);
+}
+.work-page-grid div:hover .overlay a img {
+    transform: scale(1.4);
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+}
+.about_me_grid {
+    display: grid;
+    width: 90%;
+    margin: 35px 0 0 5%;
+}
+.about_me_img_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about_me_img_div img {
+    object-fit: cover;
+    height: 250px;
+}
+.about_me_text {
+    font-size: .9em;
+}
+.about_me_button_div {
+    width: 100%;
+    height: 150px;
+    margin: 0 0 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #28282807;
+}
+.about_me_button_div button {
+    padding: 15px 35px;
+    border: #282828 solid 1px;
+    position: relative;
+}
+
+.contact-information {
+    display: flex;
+    height: 100px;
+    margin: 25px 0;
+    align-items: center;
+    justify-content: center;
+}
+.contact-information div {
+    margin: 0 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.contact-information div img {
+    height: 30px;
+}
+.form_div {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 800px;
+}
+.form_div form {
+    position: relative;
+    width: 100%;
+}
+.form_div form * {
+    font-family: inherit
+}
+.form_div form input[type=text], .form_div form input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.form_div form #text {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    height: 200px;
+    margin: 8px 0;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+textarea {
+    font-family: inherit;
+    font-size: .85em;
+}
+.form_submit_button {
+    position: relative;
+    border: #282828 solid 1px;
+    padding: 10px 35px;
+    margin: 25px 0 50px 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+footer {
+    position: relative;
+    bottom: 0;
+    font-size: .9em;
+    width: 100%;
+    text-align: center;
+}
+footer a {
+    color: #282828;
+}
+@media (min-width: 500px) {
+    .form_div form {
+        grid-template-columns: repeat(2. 1fr);
+    }
+    .form_div #email, .form_div #text {
+        grid-column: 1/3;
+    }
+    nav {
+        height: 100px;
+    }
+    .hamburger-button {
+        margin-left: 45px
+    }
+    .hamburger-button .hm-div {
+        width: 40px;
+        margin-bottom: 10px;
+    }
+    .work-page p {
+        margin: 0;
+        padding: 0;
+    }
+    .work-page-grid div {
+        height: 300px;
+    }
+}
+@media (min-width: 900px) {
+    .work-page-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .work-page-grid div {
+        height: 400px;
+    }
+    .about_me_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about_me_img_div img {
+        height: 350px;
+    }
+    .about_me_text {
+        padding: 85px 0;
+        font-size: 1em;
+    }
+}
