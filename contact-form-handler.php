@@ -1,8 +1,8 @@
 <?php
-    $firstName = $_GET['firstname'];
-    $lastName = $_GET['lastname'];
-    $visitor_email = $_GET['E-mail'];
-    $message = $_GET['text'];
+    $firstName = $_Post['firstname'];
+    $lastName = $_Post['lastname'];
+    $visitor_email = $_Post['E-mail'];
+    $message = $_Post['text'];
 
     $email_form = 'danko622@centrum.sk';
 
