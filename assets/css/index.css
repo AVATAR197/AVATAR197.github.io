@@ -101,6 +101,10 @@ nav h1 {
     top: 50%;
     transform: translateY(-50%)
 }
+.landing-page-items a {
+    color: #282828;
+    text-decoration: none;
+}
 .landing-page-title {
     text-align: center;
     font-size: 3.7em;
@@ -241,6 +245,9 @@ nav h1 {
     padding: 15px 35px;
     border: #282828 solid 1px;
     position: relative;
+}
+.about_me_button_div  a {
+    color: #282828;
 }
 
 .contact-information {
