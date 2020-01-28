@@ -1,52 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143525220-1"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'UA-143525220-1');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/index.css">
-    <title>Daniel Dopiriak</title>
+    <link rel="stylesheet" href="./assets/style/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Expletus+Sans:400,600i|Montserrat&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-    <nav>
-        <div class="hamburger-button">
-            <div class="hm-div"></div>
-            <div class="hm-div"></div>
-            <div class="hm-div"></div>
-        </div>
-    </nav>
-    <div class="navbar-content">
-        <div class="links">
-            <a href="./index.html">Landing page</a>
-            <a href="./work.html">My work</a>
-            <a href="./about_me.html">About me </a>
-            <a href="./contact.html">Contact</a>
+    <a href="https://github.com/AVATAR197" class="web-links-item" target="_blank">
+            <img src="./assets/img/github-icon.svg" alt="github-icon" href="https://github.com/AVATAR197">
+    </a>
+    <div class="landing-page">
+        <div class="healine-button-wrapper">
+            <p class="headline">
+                <span class="hi">Hi,</span> my name is Daniel Dopiriak <br>
+                I am creating <span class="highlight">websites</span>, mobile and web <span class="highlight">applications</span>.
+            </p>
+            <div class="show-my-work-button">
+                <p class="text">Show my work</p>
+                <img class="arrow" src="./assets/img/arrow.svg" alt="arrow">
+            </div>
         </div>
     </div>
-    <main>
-        <div class="landing-page-items">
-            <h1 class="landing-page-title">Daniel Dopiriak</h1>
-            <p class="landing-page-subtitle">design</p>
-            <a href="./work.html">
-                <button class="landing-page-button">Show My Work</button>
-            </a>
+    <div class="my-projects">
+        <div class="row scroll-anim">
+            <div class="info">
+                <h1>skrine-kuchyne.sk</h1>
+                <p>
+                    On this project, I was working on the spring 2019, it's custom made website for my father's business. I was taking care of the responsiveness of the website and functionality.                    <br>
+                    <br>
+                    You can visit the site using <a target="blank" href="http://www.skrine-kuchyne.sk/">this</a> link.
+                </p>
+            </div>
+            <img src="./assets/img/project-1.jpg" alt="">
         </div>
-        <img src="./assets/img/landing-page-bg.jpg" alt="mountains" class="landing-page-image">
-    </main>
-    <footer style="position: absolute">
-        <i>© 2019 <a href="./index.html">Daniel Dopiriak</a> All rights reserved.</i>
+        <div class="row scroll-anim">
+            <img src="./assets/img/project-2.jpg" alt="">
+            <div class="info">
+                <h1>iot.gjar-po.sk</h1>
+                <p>
+                    I was working on this project last year. 
+                    I created a website for displaying measured data, you can see actual brightness, humidity, and temperature in our school.
+                     I created this site using React. For now, it's working only room number 53, 29 and 84, but we are working on others. I hope it will be done by the beginning of February.
+                    <br>
+                    <br>
+                    You can visit the site using <a target="blank" href="https://iot.gjar-po.sk/">this</a> link.
+                </p>
+            </div>
+        </div>
+        <div class="row scroll-anim">
+            <div class="info">
+                <h1>Fina Points Calculator</h1>
+                <p>
+                    I started building this app in august 2019, it's a calculator for swimmers so they can convert their times to points and vice versa. I developed this app using React Native and Redux.
+                    <br>
+                    <br>
+                    You can visit the site using <a target="blank" href="https://play.google.com/store/apps/details?id=com.FinaPointsCalculator&hl=en">this</a> link.
+                </p>
+            </div>
+            <img src="./assets/img/project-3.jpg" alt="">
+        </div>
+        <div class="row scroll-anim">
+            <img src="./assets/img/project-4.jpg" alt="">
+            <div class="info">
+                <h1>Todo tasks</h1>
+                <p>
+                    Todo tasks app so you can get your stuff done...  I developed this app using React Native and Redux.
+                    <br>
+                    <br>
+                    You can visit the site using <a target="blank" href="https://play.google.com/store/apps/details?id=com.danieldopiriak.Todotasks">this</a> link.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="about-me scroll-anim">
+        <h1>About me</h1>
+        <p>
+            From 2018 in my free time, I am programming mobile applications, web applications and custom made websites. 
+            I attended some programming competitions (Zenit). 
+            My main skills are discipline and focus which I developed by hard work as a professional swimmer.
+        </p>
+        <div class="skills scroll-anim">
+            <h2>Skills:</h2>
+            <ul>
+                <li>React</li>
+                <li>Redux</li>
+                <li>React Native</li>
+                <li>JavaScript (ES6)</li>
+                <li>SCSS, CSS</li>
+                <li>HTML</li>
+                <li>Microsoft Office</li>
+            </ul>
+        </div>
+    </div>
+    <div class="contact-me scroll-anim">
+        <h1>Contact me</h1>
+        <p>E-mail: daniel.dopiriak@gmail.com</p>
+        <form action="https://formspree.io/daniel.dopiriak@gmail.com" method="POST" target="_blank"> 
+            <input type="text" id="firstname" name="firstname" placeholder="Firstname..." required>
+            <input type="text" id="lastname" name="lastname" placeholder="Lastname..." required>
+            <input type="email" id="email" name="E-mail" placeholder="Email.." required>
+            <textarea name="message" placeholder="Message..." required></textarea>
+            <button type="submit" value="Send" class="form_submit_button">Send</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <h1>Daniel Dopiriak</h1>
+        <p>Created by Daniel Dopiriak</p>
     </footer>
     <script src="./assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+    <script>
+        gsap.from('.headline', { x: -140, opacity: 0, duration: 2, ease: 'ease' });
+        gsap.from('.show-my-work-button', { x: -140, opacity: 0, duration: 2, delay: .5, ease: 'ease' });
+        gsap.from('.web-links-item', { x: -70, opacity: 0, duration: 2, delay: .5, ease: 'ease' });
+    </script>
 </body>
 </html>
