@@ -102,6 +102,7 @@ body {
         grid-template-columns: 1fr 1fr;
         height: auto;
         position: relative;
+        margin: 50px 0;
 
         .info {
             padding: 10% 15%;
@@ -122,7 +123,6 @@ body {
         img {
             margin: auto;
             width: 60%;
-            height: 75%;
             object-fit: cover;
             object-position: top;
             box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
@@ -245,7 +245,7 @@ body {
 @media (max-width: 900px) {
     html,
     body {
-        font-size: 12px;
+        font-size: 16px;
     }
     .web-links-item {
         display: none;
@@ -262,7 +262,7 @@ body {
     .contact-me {
         padding-bottom: 20px;
         form {
-            max-width: 95%;
+            max-width: 100%;
             margin: auto;
         }
     }
@@ -272,11 +272,15 @@ body {
     .my-projects {
         .row {
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
-            margin: 20px 0;
+            grid-template-rows: auto auto;
+            margin: 30px 0;
 
             .info {
-                padding: 10%;
+                padding: 5%;
+            }
+            img {
+                width: 90%;
+                margin: 0 auto;
             }
         }
         .row:nth-child(odd) {
