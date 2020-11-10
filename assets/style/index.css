@@ -8,6 +8,10 @@ body {
   scroll-behavior: smooth;
 }
 
+a {
+  color: #3f81cc;
+}
+
 .web-links-item {
   position: fixed;
   left: 20px;
