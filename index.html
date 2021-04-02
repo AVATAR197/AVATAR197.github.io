@@ -6,7 +6,18 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="./assets/style/index.css" />
         <link href="https://fonts.googleapis.com/css?family=Expletus+Sans:400,600i|Montserrat&display=swap" rel="stylesheet" />
+        <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
         <title>Daniel Dopiriak</title>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-63W3KV1VWK"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+
+            gtag("config", "G-63W3KV1VWK");
+        </script>
     </head>
     <body>
         <a href="https://github.com/AVATAR197" class="web-links-item" target="_blank">
@@ -29,8 +40,7 @@
                 <div class="info">
                     <h1>skrine-kuchyne.sk</h1>
                     <p>
-                        This is the newer version of the website. I build it at march 2020. The website is build using HTML, SCSS (CSS),
-                        JavaScript. <br />
+                        This website was built in March 2020, using HTML, SCSS (CSS), JavaScript. <br />
                         <br />
                         You can visit the site using <a target="blank" href="http://www.skrine-kuchyne.sk/">this</a> link.
                     </p>
@@ -42,9 +52,9 @@
                 <div class="info">
                     <h1>iot.gjar-po.sk</h1>
                     <p>
-                        I was working on this project since december 2018. I created a website for displaying measured data, you can see
-                        actual brightness, humidity, and temperature in our school. The website was build using React. The project is
-                        licenced under MIT licence so you can see the code on your github using
+                        This website was built to show humidity, brightness and temperature in graps of the various rooms in our school. The
+                        data are measured by Arduino devices. The project is licenced under MIT licence so you can see the code on our
+                        github using
                         <a target="blank" href="https://github.com/MarosMacko/GJAR_IoT/tree/v2">this</a> link. In July 2020 we launched new
                         version of the website with new design.
                         <br />
@@ -73,7 +83,7 @@
                     <p>
                         This is the custom made login page for Ninito AS. The page was build using React.<br />
                         <br />
-                        You can visit the site using <a target="blank" href="https://ns3.dev/login/index.html">this</a> link.
+                        You can visit the site using <a target="blank" href="https://ns3.dev/">this</a> link.
                     </p>
                 </div>
             </div>
@@ -81,8 +91,8 @@
                 <div class="info">
                     <h1>Fina Points Calculator</h1>
                     <p>
-                        I started building this app in august 2019, it's a calculator for swimmers so they can convert their times to points
-                        and vice versa. I developed this app using React Native and Redux. The app has more than 500 downloads.
+                        I started building this app in August 2019, it's a calculator for swimmers so they can convert their times to points
+                        and vice versa. I developed this app using React Native and Redux. The app has more than 1000 downloads.
                         <br />
                         <br />
                         You can visit the site and download the app using
@@ -109,17 +119,21 @@
         <div class="about-me scroll-anim">
             <h1>About me</h1>
             <p>
-                I am currently high school sutudent. I started learning programming in 2018 and since then I build a lot of project. Some of
-                them you can see in the upper secion. I build web applications in React, mobile applications in React Native and custom made
-                websites in basic HTML/CSS/JS. I attended some programming competitions like (Zenit), and also I have experience with
-                hackathon (<a target="_blank" href="https://hackkosice.com/">Hack Kosice 2020</a>). Here is the
+                I am currently high school sutudent. I started learning programming in 2018 and since then I built a lot of projects. You
+                can see the projects in upper section of the website. I am specializing in building web applications with react, but other
+                than that I've worked with React Native and Node.js before as well. In 2020 I attended programming competitions like
+                (Zenit), and hackathon (<a target="_blank" href="https://hackkosice.com/">Hack Kosice 2020</a>). Here is the
                 <a
                     target="_blank"
                     href="https://devpost.com/daniel-dopiriak?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
                     >link</a
                 >
-                to my devpost profile for further details about the hackathon project.
+                to my devpost profile for further details about the hackathon project. If you want to see my project don't forget to
+                checkout my <a target="_blank" href="https://github.com/AVATAR197">github</a> profile.
             </p>
+            <a href="https://github.com/AVATAR197">
+                <button class="githubButton">Github</button>
+            </a>
             <div class="skills scroll-anim">
                 <h2>Skills:</h2>
                 <ul>
@@ -129,8 +143,23 @@
                     <li>JavaScript (ES6)</li>
                     <li>SCSS, CSS</li>
                     <li>HTML</li>
-                    <li>NodeJS (express)</li>
+                    <li>Express</li>
                 </ul>
+            </div>
+        </div>
+        <div class="linkedin-wrapper scroll-anim">
+            <div
+                class="badge-base LI-profile-badge"
+                data-locale="en_US"
+                data-size="medium"
+                data-theme="light"
+                data-type="VERTICAL"
+                data-vanity="daniel-dopiriak-8458981ba"
+                data-version="v1"
+            >
+                <a class="badge-base__link LI-simple-link" href="https://sk.linkedin.com/in/daniel-dopiriak-8458981ba?trk=profile-badge"
+                    >Daniel Dopiriak</a
+                >
             </div>
         </div>
         <div class="contact-me scroll-anim">
@@ -148,8 +177,17 @@
             <h1>Daniel Dopiriak</h1>
             <p>Created by Daniel Dopiriak</p>
         </footer>
+        <div class="cookie_popup">
+            <p>
+                We usecookies to personalise your experience
+                <a href="/cookies.html">More information.</a>
+            </p>
+            <div class="accept_button">Accept</div>
+        </div>
         <script src="./assets/js/index.js"></script>
+        <script src="./assets/js/cookies.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.0.5/gsap.min.js"></script>
+
         <script>
             gsap.from(".headline", { x: -140, opacity: 0, duration: 2, ease: "ease" });
             gsap.from(".show-my-work-button", { x: -140, opacity: 0, duration: 2, delay: 0.5, ease: "ease" });

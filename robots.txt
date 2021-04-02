@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://www.skrine-kuchyne.sk/sitemap.xml

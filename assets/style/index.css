@@ -166,6 +166,24 @@ a {
   font-size: 0.95em;
 }
 
+.about-me .githubButton {
+  margin-top: 1rem;
+  background-color: #3f81cc;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border: none;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.about-me .githubButton:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
 .about-me .skills h2 {
   font-size: 1.4em;
   color: #3f81cc;
@@ -190,6 +208,10 @@ a {
   content: "🔥";
   margin-left: -20px;
   margin-right: 10px;
+}
+
+.linkedin-wrapper {
+  padding: 75px 7.5% 0;
 }
 
 .contact-me {
@@ -348,5 +370,95 @@ a {
   .about-me {
     padding-top: 25px;
   }
+}
+
+.cookie_popup {
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  padding: 20px 5%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 -3px 2px -2px #80808042;
+          box-shadow: 0 -3px 2px -2px #80808042;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.cookie_popup p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 750px;
+}
+
+.cookie_popup p a {
+  color: #3f81cc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cookie_popup p a:hover {
+  text-decoration: underline;
+}
+
+.cookie_popup .accept_button {
+  background-color: #3f81cc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 3px;
+  color: #fff;
+  margin-left: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cookie_popup .accept_button:hover {
+  opacity: 0.8;
+}
+
+.cookies_wrapper {
+  padding: 75px 7.5% 0;
+}
+
+.cookies_wrapper .backToMainPageButton {
+  margin-top: 1rem;
+  background-color: #3f81cc;
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem;
+  color: #fff;
+  border: none;
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.cookies_wrapper .backToMainPageButton:hover {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 /*# sourceMappingURL=index.css.map */
